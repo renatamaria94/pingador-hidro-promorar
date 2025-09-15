@@ -1,0 +1,17 @@
+name: Ping Promorar App
+
+on:
+  schedule:
+    - cron: '*/10 * * * *'
+  workflow_dispatch:
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+      - name: Run pingador
+        run: |
+          pip install requests
+          python pingador.py
