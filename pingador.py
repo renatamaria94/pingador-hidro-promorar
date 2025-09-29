@@ -1,6 +1,6 @@
 import requests
 
-url = "https://promorar-hidro.onrender.com"
+url = "https://promorar-hidro.streamlit.app/"
 headers = {
     "User-Agent": "Mozilla/5.0"
 }
